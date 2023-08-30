@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIFE</title>
+</head>
+<body>
+    
+</body>
+<script>
+    (function js(x) {
+       
+    const y = (j) => j * x;
+
+    console.log(y(s()));
+
+    function s() {
+        return j();
+    }
+
+    function j() {
+        return x ** x;
+    }
+})(3)
+function total(params, callback) {
+    
+    return (a, b, c) =>{
+    console.log(params);
+    console.log(callback);
+    console.log(a, b, c);
+    callback(3,4)
+    }
+    
+}
+function name(a, b, c) {
+    const z= 5;
+    return total(z, (m,n)=>{
+        console.log('z', z);
+        console.log('m', m);
+        console.log('n', n);
+    })(1,2,3)
+}
+// Output: ?
+
+</script>
+</html>

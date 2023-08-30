@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var missingNumber = function(nums) {
+            let numberMax = nums.length;
+            console.log('numberMax', numberMax);
+            let miss ;
+            for (let index = 0; index <= nums.length; index++) {
+                if (nums.indexOf(index) == -1) {
+                    miss = index;
+                }
+                
+            }
+            
+            return miss;
+    
+        };
+        const nums = [9,6,4,2,3,5,7,0,1];
+        const result = missingNumber(nums);
+        console.log('result', result);
+    </script>
+</body>
+</html>
